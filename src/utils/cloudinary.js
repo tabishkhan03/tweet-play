@@ -7,7 +7,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
-const uploadToCloudinary = async (localFilePath)=>{
+const uploadOnCloudinary = async (localFilePath)=>{
     try {
         if(!localFilePath) return "Error:could not find the local file path";
 
@@ -23,4 +23,4 @@ const uploadToCloudinary = async (localFilePath)=>{
     }
 }
 
-export {uploadToCloudinary}
+export {uploadOnCloudinary}
